@@ -23,8 +23,8 @@ const Header = () => {
                 <div>
                     <div className="header_theme">
                         <div className="theme">
-                            <button className="theme_icon navBut">
-                                <box-icon name="sun" color="#ffffff" className="icon"></box-icon>
+                            <button className="theme_icon">
+                                <box-icon name='sun' type='solid' color='#ffffff' ></box-icon>
                             </button>
                         </div>
                     </div>

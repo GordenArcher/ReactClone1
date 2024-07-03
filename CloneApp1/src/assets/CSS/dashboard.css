@@ -57,8 +57,15 @@
 .grid_col_row .grid .col .row .icon{
     width: 50px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background: #ccc;
+}
+
+.grid_col_row .grid .col .row .icon ion-icon{
+    font-size: 2rem;
 }
 
 .grid_col_row .grid .col .row .grid_gg{

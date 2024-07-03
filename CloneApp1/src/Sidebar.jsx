@@ -3,14 +3,18 @@
 import 'boxicons'
 import './assets/CSS/sidebar.css'
 import { SidebarData } from './components/Data'
+import NavDataComp from './components/navDataComp'
 
 const Sidebar = () => {
+
   return (
     <>
         <div className='side_nav'>
             <div className="side_bar">
                 <div className="head">
-                    <h3>G-KANAD</h3>
+                    <h3>
+                        <a href="/Dashboard" style={{color:'#fff'}}>G-KANAD</a>
+                    </h3>
                 </div>
 
                 <div className="nav">
@@ -20,18 +24,7 @@ const Sidebar = () => {
                                 <ul>
                                     {SidebarData.map((item, index) => {
                                     return (
-                                        <li key={index}>
-                                            <div  className={item.cName} style={{width: '100%'}}>
-                                                <a href='/Dashboard' >
-                                                    <div className="icon">
-                                                        <box-icon name={item.icon} color='#fff'></box-icon>
-                                                    </div>
-                                                    <div className="descript">
-                                                        {item.description}
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </li>
+                                        <NavDataComp key={index} {...item} />
                                     )
                                     })}
                                 </ul>
@@ -41,6 +34,8 @@ const Sidebar = () => {
                     </nav>
                 </div>
             </div>
+
+            
         </div>
     </>
   )

@@ -2,7 +2,8 @@
 import { grid } from './components/Data'
 import { Clients } from './components/Data'
 import './assets/CSS/dashboard.css'
-import clientImg from './assets/avatar.jpeg'
+import GridDataComp from './components/GridDataComp'
+import TableDataComp from './components/TableDataComp'
 
 const Dashboard = () => {
   return (
@@ -20,25 +21,7 @@ const Dashboard = () => {
                     <div className="grid bg5">
                         {grid.map((item, index) => {
                             return (
-                                <div className="col" key={index}>
-                                    <div className="row">
-                                        <div className='icon'>
-                                            <box-icon name={item.icon} color="#ffffff"></box-icon>
-                                        </div>
-
-                                        <div className='grid_gg'>
-                                            <div>
-                                                <div className="grid_header_text" style={{fontWeight:'bolder', color:'#cccccc7e'}}>
-                                                    {item.head}
-                                                </div>
-
-                                                <div className="grid_numbers">
-                                                    {item.numbers}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <GridDataComp key={index} {...item} />
                             )
                         })}
                     </div>
@@ -59,25 +42,7 @@ const Dashboard = () => {
                             <tbody className="table_container">
                             {Clients.map((client, index) => {
                                 return (
-                                    <tr key={index}>
-                                        <td style={{height:'100%', display:'flex', flexDirection:'row', alignItems:'center', gap:'10px'}}>
-                                            <div className="client_img">
-                                                <img src={clientImg} alt="" className='img'/>
-                                            </div>
-
-                                            <div style={{display:'flex', flexDirection:'column',}}>
-                                                <span style={{fontSize:'1rem', fontWeight:'800', color:'#cccccc7e'}}>{client.clientName}</span>
-                                                <span style={{fontSize:'.8rem', color:'#cccccc7e'}}>{client.job}</span>
-                                            </div>
-                                        </td>
-                                        <td>{client.amount}</td>
-                                        <td>
-                                            <span>
-                                                {client.status}
-                                            </span>
-                                        </td>
-                                        <td>{client.date}</td>
-                                    </tr>
+                                    <TableDataComp key={index} {...client} />
                                 )
                             })}
                             </tbody>

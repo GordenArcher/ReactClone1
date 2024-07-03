@@ -2,63 +2,77 @@ export const SidebarData = [
   {
     icon: "home",
     description: "Dashboard",
+    href: "/Dashboard",
   },
   {
     icon: "clipboard",
     description: "Forms",
+    href: "/Forms",
   },
   {
     icon: "credit-card-front",
     description: "Cards",
+    href: "/Cards",
   },
   {
     icon: "pie-chart-alt",
     description: "Charts",
+    href: "/Charts",
   },
   {
     icon: "book-alt",
     description: "Buttons",
+    href: "/Buttons",
   },
   {
     icon: "copy",
     description: "Modals",
+    href: "/Modals",
   },
   {
     icon: "table",
     description: "Tables",
+    href: "/Tables",
   },
   {
     icon: "book-open",
     description: "Pages",
+    href: "/Pages",
   },
 ];
 
 export const grid = [
   {
-    icon: "",
+    icon: "people-outline",
     head: "Total Clients",
     numbers: "6389",
+    backColor: "#fe5a1f",
   },
   {
-    icon: "",
+    icon: "wallet-outline",
     head: "Account Balance",
     numbers: "$46,760.89",
+    backColor: "#0e9f6e",
   },
   {
-    icon: "",
+    icon: "cart-outline",
     head: "New Sales",
     numbers: "376",
+    backColor: "#3f83f8",
   },
   {
-    icon: "",
+    icon: "chatbox-ellipses-outline",
     head: "Pending Contacts",
     numbers: "35",
+    backColor: "teal",
   },
 ];
 
+import clientImg from "../assets/avatar.jpeg";
+
 export const Clients = [
   {
-    // img: photo1,
+    clientImage: clientImg,
     clientName: "Hans Burger",
     job: "10x Developer",
     amount: "$ 863.45",
@@ -66,7 +80,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo2,
+    clientImage: clientImg,
     clientName: "Jolina Angelie",
     job: "Unemployed",
     amount: "$ 369.95",
@@ -74,7 +88,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo3,
+    clientImage: clientImg,
     clientName: "Sarah Curry",
     job: "Designer",
     amount: "$ 86.00",
@@ -82,7 +96,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo4,
+    clientImage: clientImg,
     clientName: "Rulia Joberts",
     job: "Actress",
     amount: "$ 1276.45",
@@ -90,7 +104,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo7,
+    clientImage: clientImg,
     clientName: "Wenzel Dashington",
     job: "Actor",
     amount: "$ 863.45",
@@ -98,7 +112,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo8,
+    clientImage: clientImg,
     clientName: "Dave Li",
     job: "Influencer",
     amount: "$ 863.45",
@@ -106,7 +120,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo9,
+    clientImage: clientImg,
     clientName: "Maria Ramovic",
     job: "Runner",
     amount: "$ 863.45",
@@ -114,7 +128,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo10,
+    clientImage: clientImg,
     clientName: "Hitney Wouston",
     job: "Singer",
     amount: "$ 863.45",
@@ -122,7 +136,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    // img: photo11,
+    clientImage: clientImg,
     clientName: "Hans Burger",
     job: "10x Developer",
     amount: "$ 863.45",
