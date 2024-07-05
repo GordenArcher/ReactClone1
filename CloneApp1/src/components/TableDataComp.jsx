@@ -1,4 +1,20 @@
 const TableDataComp = (props) => {
+
+    let bgColor;
+
+    if(props.status == 'Approved'){
+        bgColor = '#0e9f6e'
+    }else if (props.status == 'Pending'){
+        bgColor = '#d03801'
+    }else if (props.status == 'Denied'){
+        bgColor = '#c81e1e'
+    }else if (props.status == 'Expired'){
+        bgColor = '#24262d'
+    }else{
+        bgColor = null
+    }
+
+
   return (
     <tr key={props.index}>
         <td style={{height:'100%', display:'flex', flexDirection:'row', alignItems:'center', gap:'10px'}}>
@@ -13,7 +29,7 @@ const TableDataComp = (props) => {
         </td>
         <td>{props.amount}</td>
         <td>
-            <span>
+            <span className="status_rounded" style={{background:bgColor}}>
                 {props.status}
             </span>
         </td>

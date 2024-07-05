@@ -6,6 +6,7 @@ import GridDataComp from './components/GridDataComp'
 import TableDataComp from './components/TableDataComp'
 
 const Dashboard = () => {
+        
   return (
     <div className='dashboard_wrapper'>
         

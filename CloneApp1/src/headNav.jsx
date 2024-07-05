@@ -7,7 +7,13 @@ import 'boxicons'
 const Header = () => {
 
     const [toggleProfilePop, settoggleProfilePop] = useState(false)
+    const [themeIconChange, setThemeIconChange] = useState("sun")
 
+    const handleThemeChangeFunction = () => {
+        setThemeIconChange(
+            themeIconChange === "sun"? "moon" : "sun"
+        )
+    }
 
   return (
     <div className='header'>
@@ -23,8 +29,8 @@ const Header = () => {
                 <div>
                     <div className="header_theme">
                         <div className="theme">
-                            <button className="theme_icon">
-                                <box-icon name='sun' type='solid' color='#ffffff' ></box-icon>
+                            <button className="theme_icon" onClick={handleThemeChangeFunction}>
+                                <box-icon name={themeIconChange} color='#ffffff' ></box-icon>
                             </button>
                         </div>
                     </div>
