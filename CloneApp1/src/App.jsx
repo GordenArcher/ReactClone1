@@ -23,7 +23,7 @@ function App() {
     
     <Router>
       <Routes>
-        <Route path='/Dashboard' element={<Dashboard />} />
+        <Route path='/' element={<Dashboard />} />
         <Route path='/Forms' element={<Forms />} />
         <Route path='/Cards' element={<Cards />} />
         <Route path='/Charts' element={<Charts />} />

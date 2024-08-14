@@ -1,0 +1,103 @@
+.form__wrapper, .element_container{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+._forms_, .ele_container, .name_input, .validate__, .put{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.element_container, .validate__{
+    margin-top: 20px;
+    border-radius: 8px;
+    background: black;
+    padding: 20px;
+}
+
+.name_input, .account_type, .req_limit, .multiple_sel, .message_box, .sel, .policy_agree{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.name_input label, .put label{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #cccccc84;
+}
+
+.name_input input, .put input{
+    height: 48px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.account_type{
+    display: flex;
+    gap: 20px;
+}
+
+.dfr, .policy_agree{
+    display: flex;
+    gap: 5px;
+}
+
+.account_type_head, .req_limit_head, .multi_select, .meassege_head{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.message_box textarea{
+    width: 100%;
+    height: 155px;
+    padding:10px 20px;
+    border: 1px solid #ccc;
+    border-radius:6px;
+}
+
+.sel select{
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.select_mult select{
+    height: 100px;
+}
+
+.policy_agree{
+    margin-top: 20px;
+}
+
+.input_valid input{
+    border: 1px solid green;
+}
+
+.input_valid span{
+    color: green;
+}
+
+.input_invalid input{
+    border: 1px solid red;
+}
+
+.input_invalid span{
+    color: tomato;
+}
+
+.put{
+    gap: 5px;
+}
+
+.put span{
+    font-size: .8rem;
+}

@@ -1,6 +1,8 @@
 const Cards = () => {
   return (
-    <div>Cards</div>
+    <div className="cards_app">
+      
+    </div>
   )
 }
 

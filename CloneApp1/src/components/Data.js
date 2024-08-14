@@ -2,7 +2,7 @@ export const SidebarData = [
   {
     icon: "home",
     description: "Dashboard",
-    href: "/Dashboard",
+    href: "/",
   },
   {
     icon: "clipboard",

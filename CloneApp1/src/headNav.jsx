@@ -11,7 +11,7 @@ const Header = () => {
 
     const handleThemeChangeFunction = () => {
         setThemeIconChange(
-            themeIconChange === "sun"? "moon" : "sun"
+            themeIconChange === "sun" ? "moon" : "sun"
         )
     }
 
@@ -29,8 +29,10 @@ const Header = () => {
                 <div>
                     <div className="header_theme">
                         <div className="theme">
-                            <button className="theme_icon" onClick={handleThemeChangeFunction}>
-                                <box-icon name={themeIconChange} color='#ffffff' ></box-icon>
+                            <button className="theme_icon navBut" onClick={handleThemeChangeFunction}>
+                                <div>
+                                    <box-icon name={themeIconChange} color='#ffffff' ></box-icon>
+                                </div>
                             </button>
                         </div>
                     </div>
