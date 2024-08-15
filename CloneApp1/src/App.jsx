@@ -10,29 +10,92 @@ import Sidebar from './Sidebar'
 import Tables from './Tables'
 import Header from './headNav'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 
 
 function App() {
 
-  return (
+  const [resizeSide, setResizeSide] = useState(false)
+  const [themeIconChange, setThemeIconChange] = useState("sun")
+
+  const showSidebar = () => {
+    setResizeSide(!resizeSide)
+  };
+
+  const hideSidebar = () => {
+    setResizeSide(!resizeSide)
+  };
+
+
+
+  const handleThemeChangeFunction = () => {
+      setThemeIconChange(
+          themeIconChange === "sun" ? "moon" : "sun"
+      )
+  }
+
+  const themesColor = {
+    background: themeIconChange === "sun" ? '#000' : '#fff',
+    color : themeIconChange === 'sun' ? '#ffffff' : '#000',
+  }
+
+const themesColorBo = {
+    border: themeIconChange === 'sun' ? null : '1px solid #000',
+    borderRadius: '6px'
+};
+
+const themescolor = {
+  color : themeIconChange === 'sun' ? '#ffffff' : '#000',
+};
+
+
+  return ( 
     <>
     <div className="containerApp">
-      <Sidebar />
-      <Header />
-    </div>
+      <div className={`side ${resizeSide ? 'show_side' : ''}`} style={themesColor}>
+        <div className='_roooooot__ side___nav__'>
+          <Sidebar 
+          themesColor={themesColor}
+          themescolor={themescolor}
+          resizeSide={resizeSide}
+          hideSidebar={hideSidebar} 
+          />
+        </div>
+      </div>
     
-    <Router>
-      <Routes>
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/Forms' element={<Forms />} />
-        <Route path='/Cards' element={<Cards />} />
-        <Route path='/Charts' element={<Charts />} />
-        <Route path='/Buttons' element={<Buttons />} />
-        <Route path='/Modals' element={<Modals />} />
-        <Route path='/Tables' element={<Tables />} />
-        <Route path='/Pages' element={<Pages />} />
-        </Routes>
-    </Router>
+    
+      <div className="main___app">
+        <div className="__main__">
+          <div className="app_headerrr" >
+            <div className="__head__ stack">
+              <Header 
+              handleThemeChangeFunction={handleThemeChangeFunction} 
+              themeIconChange={themeIconChange} 
+              themesColor={themesColor}
+              themesColorBo={themesColorBo}
+              showSidebar={showSidebar}
+              resizeSide={resizeSide}
+              />
+            </div>
+          </div>
+          
+          <div className="routte">
+            <Router>
+              <Routes>
+                <Route path='/' element={<Dashboard />} />
+                <Route path='/Forms' element={<Forms />} />
+                <Route path='/Cards' element={<Cards />} />
+                <Route path='/Charts' element={<Charts />} />
+                <Route path='/Buttons' element={<Buttons />} />
+                <Route path='/Modals' element={<Modals />} />
+                <Route path='/Tables' element={<Tables />} />
+                <Route path='/Pages' element={<Pages />} />
+                </Routes>
+            </Router>
+          </div>
+        </div>
+      </div>
+    </div>
     </>
   )
 }

@@ -2,16 +2,9 @@ import './assets/CSS/forms.css'
 
 const Forms = () => {
 
-  const formsStyle = {
-    width: '80%',
-    marginLeft: '250px',
-    position: 'absolute',
-    top: '15%',
-  }
-
   return (
 
-    <div style={formsStyle} className="forms__">
+    <div className="forms__">
       <div className="form__wrapper">
         <div className="_forms_">
           <div className="forms_header">

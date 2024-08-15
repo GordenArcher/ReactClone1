@@ -1,0 +1,74 @@
+.cards_app, .cards, .cards_root, .col_main, .main__cards, .respon, .card_title,
+.card_w_tilte, .card_tittt_cont, .cont_grid, .cont_grid .row, .cont_grid .row .column,
+.wer, .bg_sect___, .bgggf{
+    width: 100%;
+    height: 100%;
+}
+
+.cards{
+    padding: 30px;
+}
+
+.cards_root, .main__cards, .card_w_tilte, .respon, .cont_grid .row .column, .wer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.res_cars .res_grid{
+    width: 100%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.res_cars .res_grid .col{
+    width: 100%;
+    border-radius: 7px;
+    background: #111;
+}
+
+.res_cars .res_grid .col .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.res_cars .res_grid .col .row .icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.card_w_t_head h3{
+    font-weight: 700;
+}
+
+.cont_grid{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.cont_grid .row, .bgggf{
+    border-radius: 6px;
+    padding: 30px;
+    background: #111;
+}
+
+.cont_grid .colored{
+    background: hsl(180, 100%, 25%);
+}
+
+.bgggf{
+    font-size: 1.2rem;
+}

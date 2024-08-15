@@ -4,24 +4,30 @@ import './assets/CSS/header.css'
 import ProfilePop from './components/profilePop'
 import 'boxicons'
 
-const Header = () => {
+const Header = ({showSidebar, themeIconChange, handleThemeChangeFunction, themesColor, themesColorBo}) => {
 
     const [toggleProfilePop, settoggleProfilePop] = useState(false)
-    const [themeIconChange, setThemeIconChange] = useState("sun")
-
-    const handleThemeChangeFunction = () => {
-        setThemeIconChange(
-            themeIconChange === "sun" ? "moon" : "sun"
-        )
-    }
 
   return (
     <div className='header'>
-        <div className='a'>
+        <div className='a' style={themesColor}>
+
             <div className="search_box">
-                <input type="text" placeholder='Search for projects' />
-                <div className="serach_icon" style={{position:'absolute', top:'25%', marginLeft:'10px'}}>
-                    <box-icon name='search'></box-icon>
+                <div className="mini_but">
+                    <div className="size">
+                        <button 
+                        onClick={showSidebar} 
+                        >
+                            <div className="resize">
+                            <i className='bx bxs-chevron-right'></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div className="div" style={{position:'relative'}}>
+                    <div className="search_" style={themesColorBo}>
+                        <input type="text" placeholder='Search for projects' />
+                    </div>
                 </div>
             </div>
 
@@ -31,7 +37,7 @@ const Header = () => {
                         <div className="theme">
                             <button className="theme_icon navBut" onClick={handleThemeChangeFunction}>
                                 <div>
-                                    <box-icon name={themeIconChange} color='#ffffff' ></box-icon>
+                                    <box-icon name={themeIconChange} color={themesColor.color} ></box-icon>
                                 </div>
                             </button>
                         </div>
@@ -42,7 +48,7 @@ const Header = () => {
                     <div className="notify">
                         <button className='navBut'>
                             <div className="notify_icon">
-                                <box-icon name='bell' color='#ffffff' className="icon"></box-icon>
+                                <box-icon name='bell' color={themesColor.color} className="icon"></box-icon>
                             </div>
                         </button>
                     </div>
