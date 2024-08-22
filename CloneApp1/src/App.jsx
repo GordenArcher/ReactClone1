@@ -16,37 +16,38 @@ import { useState } from 'react'
 function App() {
 
   const [resizeSide, setResizeSide] = useState(false)
-  const [themeIconChange, setThemeIconChange] = useState("sun")
 
   const showSidebar = () => {
     setResizeSide(!resizeSide)
-  };
+  }
 
   const hideSidebar = () => {
     setResizeSide(!resizeSide)
-  };
-
-
+  }
+  
+  const [themeIconChange, setThemeIconChange] = useState(() => {
+    return localStorage.getItem('icon') || 'sun';
+  });
 
   const handleThemeChangeFunction = () => {
-      setThemeIconChange(
-          themeIconChange === "sun" ? "moon" : "sun"
-      )
-  }
+    const newIcon = themeIconChange === "sun" ? "moon" : "sun";
+    setThemeIconChange(newIcon);
+    localStorage.setItem('icon', newIcon);
+  };
 
   const themesColor = {
     background: themeIconChange === "sun" ? '#000' : '#fff',
     color : themeIconChange === 'sun' ? '#ffffff' : '#000',
   }
 
-const themesColorBo = {
+  const themesColorBo = {
     border: themeIconChange === 'sun' ? null : '1px solid #000',
     borderRadius: '6px'
-};
+  }
 
-const themescolor = {
-  color : themeIconChange === 'sun' ? '#ffffff' : '#000',
-};
+  const themescolor = {
+    color : themeIconChange === 'sun' ? '#ffffff' : '#000',
+  };
 
 
   return ( 

@@ -68,7 +68,14 @@ export const grid = [
   },
 ];
 
-import clientImg from "../assets/avatar.jpeg";
+import clientImg from "../assets/images/avatar.jpeg";
+import clientImg2 from "../assets/images/photo1.jpeg";
+import clientImg3 from "../assets/images/photo2.jpeg";
+import clientImg4 from "../assets/images/photo3.jpeg";
+import clientImg5 from "../assets/images/photo4.jpeg";
+import clientImg6 from "../assets/images/photo5.jpeg";
+import clientImg8 from "../assets/images/photo8.jpeg";
+import clientImg9 from "../assets/images/photo9.jpeg";
 
 export const Clients = [
   {
@@ -80,7 +87,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg2,
     clientName: "Jolina Angelie",
     job: "Unemployed",
     amount: "$ 369.95",
@@ -88,7 +95,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg3,
     clientName: "Sarah Curry",
     job: "Designer",
     amount: "$ 86.00",
@@ -96,7 +103,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg4,
     clientName: "Rulia Joberts",
     job: "Actress",
     amount: "$ 1276.45",
@@ -104,7 +111,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg5,
     clientName: "Wenzel Dashington",
     job: "Actor",
     amount: "$ 863.45",
@@ -112,7 +119,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg6,
     clientName: "Dave Li",
     job: "Influencer",
     amount: "$ 863.45",
@@ -120,7 +127,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg8,
     clientName: "Maria Ramovic",
     job: "Runner",
     amount: "$ 863.45",
@@ -128,7 +135,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg8,
     clientName: "Hitney Wouston",
     job: "Singer",
     amount: "$ 863.45",
@@ -136,7 +143,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg,
+    clientImage: clientImg9,
     clientName: "Hans Burger",
     job: "10x Developer",
     amount: "$ 863.45",

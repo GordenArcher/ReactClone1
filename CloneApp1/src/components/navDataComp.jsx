@@ -1,5 +1,4 @@
 const navDataComp = (props) => {
-    console.log(props);
   return (
     <li key={props.index}>
         <div  className={props.cName} style={{width: '100%'}}>

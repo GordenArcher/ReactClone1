@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Avartar from './assets/avatar.jpeg'
+import Avartar from './assets/images/avatar.jpeg'
 import './assets/CSS/header.css'
 import ProfilePop from './components/profilePop'
 import 'boxicons'
