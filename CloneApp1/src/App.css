@@ -1,4 +1,4 @@
-.containerApp{
+.containerApp, .__head__{
     width: 100%;
     height: 100%;
     position: relative;
@@ -32,6 +32,8 @@
 
 .__head__{
     z-index: 99;
+    position: static;
+    top: 0;
 }
 
 .app_headerrr, .routte{

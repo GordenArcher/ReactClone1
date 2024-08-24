@@ -49,7 +49,6 @@ function App() {
     color : themeIconChange === 'sun' ? '#ffffff' : '#000',
   };
 
-
   return ( 
     <>
     <div className="containerApp">
@@ -63,7 +62,6 @@ function App() {
           />
         </div>
       </div>
-    
     
       <div className="main___app">
         <div className="__main__">

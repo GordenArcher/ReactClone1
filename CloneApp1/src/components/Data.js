@@ -74,6 +74,7 @@ import clientImg3 from "../assets/images/photo2.jpeg";
 import clientImg4 from "../assets/images/photo3.jpeg";
 import clientImg5 from "../assets/images/photo4.jpeg";
 import clientImg6 from "../assets/images/photo5.jpeg";
+import clientImg7 from "../assets/images/photo6.jpeg";
 import clientImg8 from "../assets/images/photo8.jpeg";
 import clientImg9 from "../assets/images/photo9.jpeg";
 
@@ -127,7 +128,7 @@ export const Clients = [
     date: "6/10/2020",
   },
   {
-    clientImage: clientImg8,
+    clientImage: clientImg7,
     clientName: "Maria Ramovic",
     job: "Runner",
     amount: "$ 863.45",

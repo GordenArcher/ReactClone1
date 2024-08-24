@@ -1,0 +1,59 @@
+.buttons_wrapp, .buttons_app, .buttons_main, .buttons_main main,
+.buttons_button, .tonsss, .icon_buttons{
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    background: hsla(240, 100%, 50%, 0.577);
+    outline: none;
+    transition: .3s ease;
+}
+
+button:hover{
+    background: hsla(240, 100%, 50%); 
+}
+
+.buttons_main main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.butt_main_head, .icons_buttons_head{
+    margin-top: 40px;
+}
+
+.tonsss, .icon_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+}
+
+.lgb button{
+    padding:30px 40px;
+}
+
+.lb button{
+    padding:20px 30px;
+}
+
+.rb button{
+    padding:10px;
+}
+
+.db button{
+    padding:10px;
+    cursor: not-allowed;
+}
+
+.sb button{
+    padding:10px;
+}
+
+.round button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
